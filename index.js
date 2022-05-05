@@ -1,13 +1,116 @@
-let number=0;
-function createCounter() {
+function createCount(div) {
+let value=0
+function count() {
+    value+=1
+div.textContent=value
+}
+return count
+}
+let button1=document.querySelector('.button1')
+let count1=document.querySelector('.count1')
+button1.onclick=createCount(count1)
+
+let button2=document.querySelector('.button2')
+let count2=document.querySelector('.count2')
+button2.onclick=createCount(count2)
+
+
+
+let number=0
+function increasing() {
     number+=1
     document.querySelector('.result').textContent=number
 }
-document.querySelector('.button').onclick=createCounter
+document.querySelector('.button').onclick=increasing
 
 
 
 
+
+function changeColor(sender) {
+    sender.classList.add('selected')
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*let value=0
+document.querySelector('.knopka').onclick=getNumber
+function getNumber() {
+    value+=1
+    document.querySelector('.increase').textContent=value
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*function increase(div) {
+let number=0
+function createCounter() {
+    number+=1
+    div.textContent=number
+}
+return createCounter
+}
+
+let button1=document.querySelector('.button1')
+let result1=document.querySelector('.result1')
+button1.onclick=increase(result1)
+
+let button2=document.querySelector('.button2')
+let result2=document.querySelector('.result2')
+button2.onclick=increase(result2)*/
+
+/*
 function createCount(div) {
     let value=0;
     function count() {
@@ -25,13 +128,13 @@ button1.onclick = createCount(count1)
 let button2 = document.querySelector('.button2')
 let count2 = document.querySelector('.count2')
 button2.onclick=createCount(count2)
+*/
 
 
 
-
-function changeColor(sender) {
+/*function changeColor(sender) {
     sender.classList.add('selected')
-}
+}*/
 
 
 
