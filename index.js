@@ -1,12 +1,9 @@
-let number=0
-
-
-function increase() {
+let number=0;
+function createCounter() {
     number+=1
-    document.querySelector('.counter').textContent= number
+    document.querySelector('.result').textContent=number
 }
-
-
+document.querySelector('.button').onclick=createCounter
 
 
 

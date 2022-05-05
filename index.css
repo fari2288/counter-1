@@ -1,11 +1,14 @@
 .count1,
-.count2,
-.counter {
+.count2 {
     border:  1px solid black;
     height: 50px;
     width: 50px;
 }
-
+.result {
+    width: 200px;
+    height: 50px;
+    border:  1px solid red;
+}
 .row {
     display: flex;
     justify-content: space-around;
